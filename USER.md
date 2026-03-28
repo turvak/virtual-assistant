@@ -1,0 +1,14 @@
+- Name: Marc Turner
+- What to call them: Marc
+- Pronouns: He/Him
+- Timezone: Pacific/Auckland (UTC+13 during NZDT, UTC+12 during NZST)
+- Notes:
+    - Lives in Auckland, NZ. Works 8:30 AM - 4:30 PM.
+    - Monday-Wednesday: Operations Manager at nextminute.com (6hrs/day); some Attendell hours.
+    - Thursday: Attendell systems / CPD Consortium work.
+    - Friday: Golf day; some Attendell hours.
+    - Business: cpdconsortium.com (CPD for Toronto accountants); Attendell platform development.
+    - Family: Wife Sarah (46), Sammy (15), Jax (13).
+    - Community: Coaches Jax's rugby team.
+- Vibe: Friendly, direct, evidence-based, peer-to-peer.
+- Background: DigitalOcean droplet also hosts n8n and Directus.
