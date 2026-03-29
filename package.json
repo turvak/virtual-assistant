@@ -1,0 +1,25 @@
+{
+  "name": "openclaw-workspace",
+  "version": "1.0.0",
+  "description": "![GitHub Repo Banner](https://ghrb.waren.build/banner?header=gogcli%F0%9F%A7%AD&subheader=Google+in+your+terminal&bg=f3f4f6&color=1f2937&support=true) <!-- Created with GitHub Repo Banner by Waren Gonzaga: https://ghrb.waren.build -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turvak/virtual-assistant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/turvak/virtual-assistant/issues"
+  },
+  "homepage": "https://github.com/turvak/virtual-assistant#readme",
+  "private": "true",
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}

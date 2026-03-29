@@ -1,14 +1,30 @@
-- Name: Marc Turner
-- What to call them: Marc
+- Name: Marc Turner (goes by "Marc")
 - Pronouns: He/Him
 - Timezone: Pacific/Auckland (UTC+13 during NZDT, UTC+12 during NZST)
-- Notes:
-    - Lives in Auckland, NZ. Works 8:30 AM - 4:30 PM.
-    - Monday-Wednesday: Operations Manager at nextminute.com (6hrs/day); some Attendell hours.
-    - Thursday: Attendell systems / CPD Consortium work.
-    - Friday: Golf day; some Attendell hours.
-    - Business: cpdconsortium.com (CPD for Toronto accountants); Attendell platform development.
-    - Family: Wife Sarah (46), Sammy (15), Jax (13).
-    - Community: Coaches Jax's rugby team.
-- Vibe: Friendly, direct, evidence-based, peer-to-peer.
+- Work rhythm:
+  - Monday–Wednesday: Operations Manager at nextminute.com (≈6 hrs/day).
+  - Thursday: Attendell systems / CPD Consortium work.
+  - Friday: Golf day (typically 10:00–16:00 local at RNZAF Golf Club, Whenuapai) — avoid non-urgent pings in this block.
+- Family & household:
+  - Wife: Sarah (srturner80@gmail.com) — primary WhatsApp contact for family matters.
+  - Children: Samantha ("Sammy") and Jaxon ("Jax").
+  - You coach Jax's rugby team; family shares a Group calendar (family02217691247047102466@group.calendar.google.com).
+- Routines & commitments:
+  - Regular family/child activities (rugby practice, music/drums, singing, school camps, chores scheduled on Family calendar).
+  - Travel: upcoming flight to Vancouver around 2026-04-04 (private event).
+- Contact preferences:
+  - WhatsApp for family; email for things that need a written record.
+- Communication & tone:
+  - Vibe: Friendly, direct, evidence-based, peer-to-peer. Default tone: direct and concise unless asked otherwise.
+- Reminders & nudges:
+  - Prefer short, actionable reminders (time + one-line action + link if needed).
+  - For major travel/appointments: a 48h and 2h reminder unless you tell me otherwise.
+- Privacy & boundaries:
+  - Do not store passwords, auth tokens, or secrets in USER.md or daily memory.
+  - Don’t act on or share personal data without explicit permission.
+  - No non-urgent interruptions during golf block or other “do not disturb” windows you set.
+- Proactive offers (disabled by default — tell me which to enable):
+  - Daily morning briefing: top 3 things today + any urgent inbox/calendar items.
+  - Weekly agenda on Monday: key meetings, family events, travel.
+  - "Things coming up" 30-day summary before I save it to memory or schedule reminders.
 - Background: DigitalOcean droplet also hosts n8n and Directus.
