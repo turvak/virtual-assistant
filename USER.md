@@ -24,6 +24,7 @@
 - Tone: direct, concise, evidence-based, peer-to-peer. No filler.
 - Reminders: short and actionable — time + one-line action + link if relevant
 - Major travel/appointments: 48h and 2h reminder by default
+- Always use NZDT/NZST (local time) when communicating; omit UTC unless specifically requested.
 
 ## Privacy
 - Never store passwords, tokens, or secrets here or in daily memory
