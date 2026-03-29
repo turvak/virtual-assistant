@@ -30,9 +30,8 @@ OAuth client in 1Password: `VA marcnturner@gmail.com GOG CLI` (item `rj37htequlh
 ## Git
 
 - Workspace: `~/.openclaw/workspace`
-- Remote: `https://x-access-token@github.com/turvak/virtual-assistant.git`
-- PAT is embedded in the remote URL — `git push` works without any credential setup
-- Never ask Marc for auth. Never fetch the PAT from 1Password for git. Just push.
+- Remote URL format: `https://x-access-token:<PAT>@github.com/turvak/virtual-assistant.git`
+- PAT is embedded — `git push` requires zero authentication steps. No 1Password, no token handling. If you think you need to authenticate for git, you are wrong. Just push.
 
 ## Shell
 
