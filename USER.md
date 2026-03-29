@@ -1,37 +1,30 @@
+# USER.md - Marc Turner
+
+## Identity
 - Name: Marc Turner (goes by "Marc")
 - Pronouns: He/Him
-- Timezone: Pacific/Auckland (UTC+13 during NZDT, UTC+12 during NZST)
-- Work rhythm:
-  - MondayWednesday: Operations Manager at nextminute.com (6 hrs/day).
-  - Thursday: Attendell systems / CPD Consortium work.
-  - Friday: Golf day (typically 10:0016:00 local at RNZAF Golf Club, Whenuapai)  avoid non-urgent pings in this block.
-- Family & household:
-  - Wife: Sarah (srturner80@gmail.com)  primary WhatsApp contact for family matters.
-  - Children: Samantha ("Sammy") and Jaxon ("Jax").
-  - You coach Jax's rugby team; family shares a Group calendar (family02217691247047102466@group.calendar.google.com).
-- Routines & commitments:
-  - Regular family/child activities (rugby practice, music/drums, singing, school camps, chores scheduled on Family calendar).
-  - Travel: upcoming flight to Vancouver around 2026-04-04 (private event).
-- Contact preferences:
-  - WhatsApp for family; email for things that need a written record.
-- Communication & tone:
-  - Vibe: Friendly, direct, evidence-based, peer-to-peer. Default tone: direct and concise unless asked otherwise.
-- Reminders & nudges:
-  - Prefer short, actionable reminders (time + one-line action + link if needed).
-  - For major travel/appointments: a 48h and 2h reminder unless you tell me otherwise.
-- Privacy & boundaries:
-  - Do not store passwords, auth tokens, or secrets in USER.md or daily memory.
-  - Dont act on or share personal data without explicit permission.
-  - No non-urgent interruptions during golf block or other do not disturb windows you set.
-- Proactive offers (disabled by default  tell me which to enable):
-  - Daily morning briefing: top 3 things today + any urgent inbox/calendar items.
-  - Weekly agenda on Monday: key meetings, family events, travel.
-  - "Things coming up" 30-day summary before I save it to memory or schedule reminders.
-- Background: DigitalOcean droplet also hosts n8n and Directus.
+- Timezone: Pacific/Auckland (UTC+13 NZDT / UTC+12 NZST)
 
-# Session-save rule (added 2026-03-29)
-- Rule: Any permanent fact about me, my family, my routines, my preferences, or my values goes in USER.md immediately.
-- Daily memory is only for what happened today.
-- Never ask where to save permanent facts — save them to USER.md so they are loaded every session.
+## Work Rhythm
+- Monday–Wednesday: Operations Manager at nextminute.com (~6 hrs/day)
+- Thursday: Attendell systems / CPD Consortium work
+- Friday: Golf day — RNZAF Golf Club, Whenuapai (typically 10:00–16:00). No non-urgent pings during this block.
 
-If you want this rule copied into IDENTITY.md as well, say so and I'll add it there.
+## Family
+- Wife: Sarah — srturner80@gmail.com, primary WhatsApp contact for family matters
+- Children: Samantha ("Sammy") and Jaxon ("Jax")
+- Marc coaches Jax's rugby team
+- Family calendar: family02217691247047102466@group.calendar.google.com
+
+## Routines & Commitments
+- Regular family activities: rugby practice, music/drums, singing, school camps, chores (all on Family calendar)
+
+## Communication Preferences
+- WhatsApp for family; email for anything needing a written record
+- Tone: direct, concise, evidence-based, peer-to-peer. No filler.
+- Reminders: short and actionable — time + one-line action + link if relevant
+- Major travel/appointments: 48h and 2h reminder by default
+
+## Privacy
+- Never store passwords, tokens, or secrets here or in daily memory
+- Don't act on or share personal data without explicit permission
