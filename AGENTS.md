@@ -34,6 +34,31 @@ Just do it. Every session. It takes seconds and prevents you from being useless.
 - Sending emails, public posts, anything externally irreversible — ask first.
 - Everything else — just do it.
 
+## Sub-Agents
+
+Use sub-agents for any task expected to take more than ~10 seconds. The main session must stay available for conversation during sub-agent work.
+
+**Always use a sub-agent for:**
+- Shell commands (apt, wget, dpkg, git operations)
+- Browser/headless Chrome tasks
+- Multi-step workflows (OAuth, API polling, retries)
+- File processing (large reads, scraping, PDF extraction)
+
+**Don't bother for:**
+- Quick config reads/writes
+- Single tool calls that return immediately
+- Conversational responses
+
+Report back with a summary when the sub-agent finishes. If a sub-agent fails, report the error — don't silently retry indefinitely.
+
+### Sub-Agent Model Selection
+
+Sub-agents inherit the current default model unless the task clearly warrants something different. If a better or cheaper model would make a meaningful difference, suggest it — but don't switch without saying so. Marc can also request a specific model directly.
+
+**Model decision guide:**
+- Gemini: shell tasks, file ops, web searches, calendar/email, config changes
+- Sonnet: OAuth flows, multi-step debugging, large code generation, complex planning
+
 ## Heartbeats
 
 Use heartbeats productively. Don't just reply HEARTBEAT_OK unless there's genuinely nothing to do.
