@@ -51,6 +51,8 @@ Use sub-agents for any task expected to take more than ~10 seconds. The main ses
 
 Report back with a summary when the sub-agent finishes. If a sub-agent fails, report the error — don't silently retry indefinitely.
 
+**For large file generation (HTML, reports, long scripts):** write in sections — never attempt to generate the full file in one model turn. Write each section to disk before proceeding to the next. If a sub-agent hits a context length limit mid-generation, kill it and restart with a chunked approach rather than looping.
+
 ### Sub-Agent Model Selection
 
 Sub-agents inherit the current default model unless the task clearly warrants something different. If a better or cheaper model would make a meaningful difference, suggest it — but don't switch without saying so. Marc can also request a specific model directly.

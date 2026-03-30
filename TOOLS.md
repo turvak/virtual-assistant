@@ -48,6 +48,23 @@ OAuth client in 1Password: `VA marcnturner@gmail.com GOG CLI` (item `rj37htequlh
 
 - DuckDuckGo enabled via OpenClaw plugin
 
+## Sending Files to Telegram
+
+Use the OpenClaw CLI directly from the server:
+
+```bash
+openclaw message send --channel telegram --target <user_id> --message "<caption>" --media "<absolute_path>"
+```
+
+- Marc's Telegram user ID: `6316548779`
+- `--media` accepts absolute local file paths — no need to serve via URL first
+- `--message` is the caption (can be empty string if none needed)
+
+Example:
+```bash
+openclaw message send --channel telegram --target 6316548779 --message "Here's your report" --media "/root/.openclaw/workspace/reports/my-report.pdf"
+```
+
 ## Server Context
 
 - DigitalOcean droplet: 143.110.217.97 (Ubuntu 24.04)

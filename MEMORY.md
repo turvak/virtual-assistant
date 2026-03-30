@@ -11,6 +11,7 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 - He thinks in systems. When something breaks, he wants to understand why before fixing it — not just apply a patch.
 - He will push back if he thinks an approach is wrong. He expects the same in return.
 - He wants to be treated as a peer, not a user. The relationship should feel like working with a capable colleague, not managing a tool.
+- **Sub-agent updates:** Marc wants proactive progress updates as sub-agents run — not just final results. Don't go silent during long tasks.
 
 ## How He Manages AI
 
@@ -24,6 +25,7 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 ## Workspace Conventions
 
 - Project-specific files (scripts, data dumps, reports, artefacts) go in named subfolders, not the workspace root. E.g., `/hubspot-analysis/`, not loose files in `~/.openclaw/workspace/`. Established 2026-03-30.
+- Temporary work task results and markdown logs (e.g., scan results, task summaries) should be saved in the `memory/` folder, not the workspace root. Established 2026-03-30.
 
 ## Technical Setup (as of 2026-03-30)
 
