@@ -35,3 +35,4 @@ tmp/*.token
 # Local editor / OS files (not sensitive but keep workspace tidy)
 .DS_Store
 thumbs.db
+.env
