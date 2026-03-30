@@ -1,0 +1,5 @@
+ID                                                                           START                      END                        SUMMARY
+7c38iu6s7icafj81maefu81o86_20260331T050000Z                                  2026-03-31T18:00:00+13:00  2026-03-31T18:30:00+13:00  Jax NO drums
+4d4aesl4936hsldhibjivd6af9_20260402T050000Z                                  2026-04-02T18:00:00+13:00  2026-04-02T18:30:00+13:00  Sammy singing at Chris
+abss7gndp4otkskku4bog6b880                                                   2026-04-04T20:00:00+13:00  2026-04-05T08:00:00+12:00  Flight to Vancouver (NZ 24)
+c8s68p9oc4pjibb56phjab9kcpi66b9pcphm8b9k6dijidj26th64o9h6c_20260404T230000Z  2026-04-05T11:00:00+12:00  2026-04-05T11:30:00+12:00  Shot

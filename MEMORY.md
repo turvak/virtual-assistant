@@ -19,6 +19,10 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 - He prefers agent-first approaches — try to do it yourself before asking for terminal access or manual steps.
 - He has set up a deliberate model escalation pattern: mini for daily tasks, Sonnet/Gemini for reasoning-heavy work, Opus/GPT-5 for deep work.
 
+## Workspace Conventions
+
+- Project-specific files (scripts, data dumps, reports, artefacts) go in named subfolders, not the workspace root. E.g., `/hubspot-analysis/`, not loose files in `~/.openclaw/workspace/`. Established 2026-03-30.
+
 ## Technical Setup (as of 2026-03-30)
 
 - OpenClaw is fully set up with Telegram, 1Password, gog (Google services), Chrome headless, and GitHub.
