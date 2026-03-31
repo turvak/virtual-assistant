@@ -13,15 +13,14 @@ Before doing anything else, read these files in order — no exceptions, no aski
 5. `core/TOOLS.md` — what you have access to and how to use it
 6. `marcs-life/memory/YYYY-MM-DD.md` (today + yesterday) — recent events
 
-## Memory Strategy (Separation of Concerns)
+### Dynamic Project Onboarding
+Whenever a new project is discussed or created:
+1.  **Initialize Directory:** Create `projects/<project-name>/` immediately.
+2.  **Context File:** Create `projects/<project-name>/README.md` to define goals, tech stack, and state.
+3.  **Update AGENTS.md:** Add the new project path to the model's "Session Startup" list if it requires ongoing focus.
+4.  **Automatic Memory:** Document project-specific insights in `projects/<project-name>/MEMORY.md` to keep the root `marcs-life/MEMORY.md` clean and high-level.
 
-To maintain context efficiency, memory is split:
-
-- `marcs-life/` (Personal, Family, Core Patterns)
-- `projects/nextminute/` (Work, HubSpot, AK, Regression Testing)
-- `projects/cpd/` (Business automation, n8n)
-
-### Retrieval Rule
+This structure is designed to be recursive and infinite—if a company has multiple sub-projects, use `projects/<company>/<project>`.ule
 - When discussing general topics or family, default to `marcs-life/`.
 - When work or specific projects are mentioned (e.g., "HubSpot," "AK," "Regression"), I will autonomously use `memory_search` or `ls` on the relevant `projects/` subfolder before answering.
 
