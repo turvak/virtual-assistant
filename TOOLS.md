@@ -1,83 +1,40 @@
-# TOOLS.md - Your Tools
+# TOOLS.md - Local Notes
 
-You have all of these. Use them directly. Never ask Marc if you have access.
+Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-## Google Suite CLI (gog)
+## What Goes Here
 
-- Binary: `/usr/local/bin/gog` (v0.12.0)
-- Wrapper: `/usr/local/bin/gog-auth` (sets required env vars automatically — always use this)
-- Account: `marcnturner@gmail.com`
-- Credentials: `/root/.config/gogcli/credentials.json`
-- Env vars set automatically by wrapper: `GOG_KEYRING_PASSWORD`, `GOG_ACCOUNT`
+Things like:
 
-### Common commands
-- `gog-auth gmail ls` — inbox
-- `gog-auth calendar list` — upcoming events
-- `gog-auth drive ls` — Drive files
-- `gog-auth whoami` — confirm identity
+- Camera names and locations
+- SSH hosts and aliases
+- Preferred voices for TTS
+- Speaker/room names
+- Device nicknames
+- Anything environment-specific
 
-### If auth fails
-Re-run: `gog auth credentials /root/.config/gogcli/credentials.json` then `gog auth add marcnturner@gmail.com --manual`
-OAuth client in 1Password: `VA marcnturner@gmail.com GOG CLI` (item `rj37htequlhduzjtybe6sfbihm`)
+## Examples
 
-## 1Password CLI (op)
+```markdown
+### Cameras
 
-- Version: 2.33.1
-- Auth: service account token already in env as `OP_SERVICE_ACCOUNT_TOKEN`
-- Vault: `Open Claw VA` (`vxaknhjqx6hffxecrwhpglpcyq`)
-- Just run `op` commands directly — no setup needed each session
+- living-room → Main area, 180° wide angle
+- front-door → Entrance, motion-triggered
 
-## Git
+### SSH
 
-- Workspace: `~/.openclaw/workspace`
-- Remote URL format: `https://x-access-token:<PAT>@github.com/turvak/virtual-assistant.git`
-- PAT is embedded — `git push` requires zero authentication steps. No 1Password, no token handling. If you think you need to authenticate for git, you are wrong. Just push.
+- home-server → 192.168.1.100, user: admin
 
-## Shell
+### TTS
 
-- Elevated access enabled (`elevatedDefault: on`)
-- Run commands directly without asking permission
-- Use `trash` instead of `rm` where possible
-
-## Browser
-
-- Chrome headless at `/usr/bin/google-chrome-stable`
-- Configured for headless use with noSandbox
-
-## Web Search
-
-- DuckDuckGo enabled via OpenClaw plugin
-
-## Signal CLI (signal-cli)
-
-- Binary: `/usr/local/bin/signal-cli`
-- Version: 0.14.1
-- Use for reading/sending Signal messages directly via shell if the Signal channel is not enabled in OpenClaw.
-- **List Contacts:** `signal-cli -o json listContacts`
-- **Search Contact:** `signal-cli -o json listContacts | jq '.[] | select(.name == "Name")'`
-- **Send Message:** `signal-cli send -m "message" +E164number`
-- **Known Contacts:**
-  - Sarah Turner: `+64212108996`
-
-## Sending Files to Telegram
-
-Use the OpenClaw CLI directly from the server:
-
-```bash
-openclaw message send --channel telegram --target <user_id> --message "<caption>" --media "<absolute_path>"
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
 ```
 
-- Marc's Telegram user ID: `6316548779`
-- `--media` accepts absolute local file paths — no need to serve via URL first
-- `--message` is the caption (can be empty string if none needed)
+## Why Separate?
 
-Example:
-```bash
-openclaw message send --channel telegram --target 6316548779 --message "Here's your report" --media "/root/.openclaw/workspace/reports/my-report.pdf"
-```
+Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
-## Server Context
+---
 
-- DigitalOcean droplet: 143.110.217.97 (Ubuntu 24.04)
-- Also hosts: n8n, Directus, Postgres (all in Docker — do not touch)
-- OpenClaw runs natively (not in Docker)
+Add whatever helps you do your job. This is your cheat sheet.
