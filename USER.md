@@ -6,18 +6,35 @@
 - Timezone: Pacific/Auckland (UTC+13 NZDT / UTC+12 NZST)
 
 ## Work Rhythm
-- Monday–Wednesday: Operations Manager at nextminute.com (~6 hrs/day)
-- Thursday: Attendell systems / CPD Consortium work
-- Friday: Golf day — RNZAF Golf Club, Whenuapai (typically 10:00–16:00). No non-urgent pings during this block.
+- Monday–Wednesday: Operations Manager at nextminute.com (~6 hrs/day). Currently leading regression testing for a .net 4.6 to .net 8 upgrade (Target: ASAP, ideally within April 2026). Also responsible for implementing innovative systems (e.g., OpenClaw).
+- Thursday: Attendell systems / CPD Consortium work (cpdconsortium.com). Heavy use of n8n for business automation.
+- Friday: Golf day — RNZAF Golf Club, Whenuapai (typically 10:00–16:00). Current handicap: 15-16. Goal: Consistency + a personal best (PB) of 78. No non-urgent pings during this block.
+
+## Home Tech
+- Amazon Alexa Echos (limited use)
+- Ring Doorbell
+- n8n (primary automation engine)
 
 ## Family
-- Wife: Sarah — srturner80@gmail.com, primary WhatsApp contact for family matters
-- Children: Samantha ("Sammy") and Jaxon ("Jax")
-- Marc coaches Jax's rugby team
+- Wife: Sarah — srturner80@gmail.com (DOB: 1980-01-30), primary WhatsApp contact for family matters. Deputy Principal at AGE school (run by Crimson). Work is high-stress/intense (neuro-diverse students, limited support from new principal). Signal: +64212108996.
+- Children: Samantha ("Sammy") and Jaxon ("Jax").
+- Sammy: Taking her first solo trip to Canada (Vancouver) to see Auntie Adina on April 4th, 2026. (DOB: 2010-07-17).
+- Jax: 13 years old. Dating girlfriend Emelia since early 2025. (DOB: 2012-12-03).
+- Marc coaches Jax's rugby team.
+- Brother: Shane Turner (DOB: 1977-02-16). Lives in Forrest Hill, Auckland (90 Nile Road).
+- Parents: Paul Turner (Father).
+- Grandmother: Mary Turner (Paul Turner's mum). Passed away 2025-11-23.
+- Family location: Waiake, Auckland.
 - Family calendar: family02217691247047102466@group.calendar.google.com
 
+## Preferences
+- Food: Kebabs, Indian, Thai, Sushi.
+- Travel: Seasoned family travelers. Previous trips include Toronto/Collingwood (visiting Murray and Sue), Thailand, Mexico, LA, and Dallas.
+
 ## Routines & Commitments
-- Regular family activities: rugby practice, music/drums, singing, school camps, chores (all on Family calendar)
+- Regular family activities: rugby practice (Jax), music/drums (Jax: Wednesday band practice), singing (Sammy), school camps, chores (all on Family calendar)
+- Evening: Couch and TV (common for Sarah to fall asleep).
+- Friday: Golf day — RNZAF Golf Club, Whenuapai (typically 10:00–16:00). Current handicap: 15-16. Goal: Consistency + a personal best (PB) of 78. No non-urgent pings during this block.
 
 ## Communication Preferences
 - WhatsApp for family; email for anything needing a written record

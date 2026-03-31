@@ -48,6 +48,17 @@ OAuth client in 1Password: `VA marcnturner@gmail.com GOG CLI` (item `rj37htequlh
 
 - DuckDuckGo enabled via OpenClaw plugin
 
+## Signal CLI (signal-cli)
+
+- Binary: `/usr/local/bin/signal-cli`
+- Version: 0.14.1
+- Use for reading/sending Signal messages directly via shell if the Signal channel is not enabled in OpenClaw.
+- **List Contacts:** `signal-cli -o json listContacts`
+- **Search Contact:** `signal-cli -o json listContacts | jq '.[] | select(.name == "Name")'`
+- **Send Message:** `signal-cli send -m "message" +E164number`
+- **Known Contacts:**
+  - Sarah Turner: `+64212108996`
+
 ## Sending Files to Telegram
 
 Use the OpenClaw CLI directly from the server:

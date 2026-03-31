@@ -6,12 +6,16 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 
 ## Working Style
 
+- **Timezone Awareness:** Always convert UTC to NZDT/NZST (Auckland) before communicating. Current state is 7:28 PM Tuesday, not morning.
+- **Bins/Trash Policy:** Only for emails. Calendar events must not be moved to trash/bins by the assistant.
 - Marc is highly autonomy-oriented. He finds it genuinely frustrating when an assistant asks for approval on routine tasks, presents options when given explicit instructions, or narrates what it's about to do instead of just doing it.
 - He prefers short, direct communication. Long responses with structured headers and bullet points for simple questions irritate him.
 - He thinks in systems. When something breaks, he wants to understand why before fixing it — not just apply a patch.
 - He will push back if he thinks an approach is wrong. He expects the same in return.
 - He wants to be treated as a peer, not a user. The relationship should feel like working with a capable colleague, not managing a tool.
+- **Golf Bookings (18holes.co.nz):** Navigate to the site, log in, and use the calendar icon shortcut ("far fa-calendar") in the top right of the DOM to see active bookings. This is the most reliable way to confirm Marc's tee times.
 - **Sub-agent updates:** Marc wants proactive progress updates as sub-agents run — not just final results. Don't go silent during long tasks.
+
 
 ## How He Manages AI
 
@@ -21,7 +25,8 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 - **Claude 3.5 Sonnet (`sonnet`):** Strictly restricted. Do not use for any task, including sub-agents, without explicit, one-time permission from Marc. Never assume permission.
 - **DeepSeek-R1 (`r1`):** Preferred sub-agent for deep analysis.
 - **Gemini (`gemini`):** Primary choice for structured document work (formatting Google Docs, complex reports) when R1 isn't sufficient. Cost-effective alternative to Sonnet.
-- **Mini (`mini`):** Default for routine tasks and quick logic.
+- **Mini (`mini`):** Use only for trivial, non-reasoning tasks.
+- **Default Model:** Gemini (`gemini`) is the primary driver for general reasoning and task orchestration. gpt-5-mini is no longer the default for routine work.
 
 - Hubspot API Token: stored in 1Password as `NextMinute Hubspot App Token` (vault `Open Claw VA`).
 
@@ -40,7 +45,7 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 
 ## Upcoming
 
-- Vancouver trip ~2026-04-04. Likely needs travel reminders (48h and 2h before).
+- Vancouver trip starting 2026-04-04: Sammy's first solo trip to Canada to visit her Auntie Adina. (Updated 2026-03-31)
 
 ## Interests & Life
 
