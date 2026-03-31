@@ -18,7 +18,10 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 - He is cost-conscious about model usage. He uses cheap models (gpt-5-mini) for routine work and switches up only when the task genuinely requires it.
 - He gets frustrated when AI over-engineers solutions or adds unnecessary complexity.
 - He prefers agent-first approaches — try to do it yourself before asking for terminal access or manual steps.
-- He has set up a deliberate model escalation pattern: mini for daily tasks, Sonnet/Gemini for reasoning-heavy work, Opus/GPT-5 for deep work.
+- **Claude 3.5 Sonnet (`sonnet`):** Strictly restricted. Do not use for any task, including sub-agents, without explicit, one-time permission from Marc. Never assume permission.
+- **DeepSeek-R1 (`r1`):** Preferred sub-agent for deep analysis.
+- **Gemini (`gemini`):** Primary choice for structured document work (formatting Google Docs, complex reports) when R1 isn't sufficient. Cost-effective alternative to Sonnet.
+- **Mini (`mini`):** Default for routine tasks and quick logic.
 
 - Hubspot API Token: stored in 1Password as `NextMinute Hubspot App Token` (vault `Open Claw VA`).
 
