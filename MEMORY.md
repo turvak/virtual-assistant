@@ -28,7 +28,7 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 - **Mini (`mini`):** Use only for trivial, non-reasoning tasks.
 - **Default Model:** `gemini-3-flash-preview` is the primary driver for general reasoning and task orchestration. gpt-5-mini is no longer the default.
 - **Context Management:** 40k tokens is the preferred "sweet spot" for context limit to balance cost and performance. Use sub-agents to summarize large JSON/docs instead of increasing the limit.
-- **Poem Style:** banter-heavy, self-deprecating, tight metre. Sincerity at the end, buried in humor. Shared history (e.g. shelf-building, Reacher casting) is the secret sauce.
+- **Poem Style:** banter-heavy, self-deprecating, tight metre. Sincerity at the end, buried in humor. Shared history is the secret sauce.
 
 - Hubspot API Token: stored in 1Password as `NextMinute Hubspot App Token` (vault `Open Claw VA`).
 
