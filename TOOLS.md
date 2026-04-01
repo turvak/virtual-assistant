@@ -81,3 +81,19 @@ openclaw message send --channel telegram --target 6316548779 --message "Here's y
 - DigitalOcean droplet: 143.110.217.97 (Ubuntu 24.04)
 - Also hosts: n8n, Directus, Postgres (all in Docker — do not touch)
 - OpenClaw runs natively (not in Docker)
+
+---
+
+### Local Notes
+
+Skills define _how_ tools work. This section is for _your_ specifics — the stuff that's unique to your setup.
+
+#### Cameras
+- No cameras currently configured.
+
+#### SSH
+- No SSH hosts currently configured.
+
+#### TTS
+- Preferred voice: "Nova" (warm, slightly British)
+- Default speaker: Kitchen HomePod
