@@ -6,14 +6,20 @@ You have all of these. Use them directly. Never ask Marc if you have access.
 
 - Binary: `/usr/local/bin/gog` (v0.12.0)
 - Wrapper: `/usr/local/bin/gog-auth` (sets required env vars automatically — always use this)
-- Account: `marcnturner@gmail.com`
+- Account 1: `marcnturner@gmail.com` (Main)
+- Account 2: `admin@cpdconsortium.com` (CPD)
 - Credentials: `/root/.config/gogcli/credentials.json`
 - Env vars set automatically by wrapper: `GOG_KEYRING_PASSWORD`, `GOG_ACCOUNT`
 
+### Usage Instructions
+- By default, searches and queries should include results from **both** accounts unless one is specified.
+- Use `--account <email>` with `gog-auth` to target a specific account.
+
 ### Common commands
-- `gog-auth gmail ls` — inbox
-- `gog-auth calendar list` — upcoming events
+- `gog-auth gmail ls` — inbox (defaults to main, search both if requested)
+- `gog-auth calendar list` — upcoming events (check both for general requests)
 - `gog-auth drive ls` — Drive files
+- `gog-auth --account admin@cpdconsortium.com gmail ls` — CPD inbox
 - `gog-auth whoami` — confirm identity
 
 ### If auth fails

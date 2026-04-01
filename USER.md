@@ -16,16 +16,17 @@
 - n8n (primary automation engine)
 
 ## Family
-- Wife: Sarah — srturner80@gmail.com (DOB: 1980-01-30), primary WhatsApp contact for family matters. Deputy Principal at AGE school (run by Crimson). Work is high-stress/intense (neuro-diverse students, limited support from new principal). Signal: +64212108996.
-- Children: Samantha ("Sammy") and Jaxon ("Jax").
-- Sammy: Taking her first solo trip to Canada (Vancouver) to see Auntie Adina on April 4th, 2026. (DOB: 2010-07-17).
-- Jax: 13 years old. Dating girlfriend Emelia since early 2025. (DOB: 2012-12-03).
-- Marc coaches Jax's rugby team.
-- Brother: Shane Turner (DOB: 1977-02-16). Lives in Forrest Hill, Auckland (90 Nile Road).
+- Sarah: Deputy Principal at AGE school (run by Crimson). Work is high-stress/intense (neuro-diverse students, limited support from new principal). Signal: +64212108996. DOB: 1980-01-30. Canadian (Toronto), ocean swimmer (Waiake), makes oat milk cappuccinos in the morning. Night routine: Red bush tea, Magnesium, Ashwagandha, and Collagen.
+- Sammy: Taking her first solo trip to Canada (Vancouver) to see Auntie Adina on April 4th, 2026. (DOB: 2010-07-17). Currently 15.
+- Jax: 13 years old. Dating girlfriend Emelia since early 2025. (DOB: 2012-12-03). Marc coaches his rugby team. Wednesday schedule: heavy (Rugby + Band practice).
+- Shane Turner (Brother): DOB: 1977-02-16. Lives in Forrest Hill, Auckland (90 Nile Road).
 - Parents: Paul Turner (Father).
+- Parents-in-law (Sarah's parents): Murray and Sue Spivak. Live in Collingwood/North York, Ontario. Sue loves Jack Reacher books (hates Tom Cruise version), lattes, and veg crisps. Met Murray on a kibbutz.
 - Grandmother: Mary Turner (Paul Turner's mum). Passed away 2025-11-23.
+- Marc Turner's Birthday: 1979-09-22.
 - Family location: Waiake, Auckland.
 - Family calendar: family02217691247047102466@group.calendar.google.com
+- Marc's voice/personality: "emotional black hole" (light/humorous banter covering sentimentality), cost-conscious, system-thinker, autonomy-oriented. Prefer one-question-at-a-time conversational flow.
 
 ## Preferences
 - Food: Kebabs, Indian, Thai, Sushi.

@@ -26,7 +26,9 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 - **DeepSeek-R1 (`r1`):** Preferred sub-agent for deep analysis.
 - **Gemini (`gemini`):** Primary choice for structured document work (formatting Google Docs, complex reports) when R1 isn't sufficient. Cost-effective alternative to Sonnet.
 - **Mini (`mini`):** Use only for trivial, non-reasoning tasks.
-- **Default Model:** Gemini (`gemini`) is the primary driver for general reasoning and task orchestration. gpt-5-mini is no longer the default for routine work.
+- **Default Model:** `gemini-3-flash-preview` is the primary driver for general reasoning and task orchestration. gpt-5-mini is no longer the default.
+- **Context Management:** 40k tokens is the preferred "sweet spot" for context limit to balance cost and performance. Use sub-agents to summarize large JSON/docs instead of increasing the limit.
+- **Poem Style:** banter-heavy, self-deprecating, tight metre. Sincerity at the end, buried in humor. Shared history (e.g. shelf-building, Reacher casting) is the secret sauce.
 
 - Hubspot API Token: stored in 1Password as `NextMinute Hubspot App Token` (vault `Open Claw VA`).
 
@@ -45,7 +47,7 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 
 ## Upcoming
 
-- Vancouver trip starting 2026-04-04: Sammy's first solo trip to Canada to visit her Auntie Adina. (Updated 2026-03-31)
+- Upcoming events: check Family calendar for details.
 
 ## Interests & Life
 

@@ -15,7 +15,9 @@
 
 # Tools — Available Always, Never Ask About Access
 - **1Password**: op CLI, service account token in env. Vault: "Open Claw VA" (vxaknhjqx6hffxecrwhpglpcyq). Just use it.
-- **Google services**: use `gog-auth` wrapper at `/usr/local/bin/gog-auth`. Account: marcnturner@gmail.com. Handles auth automatically — never set up manually.
+- Google Suite CLI (gog) at `/usr/local/bin/gog`
+- Signal CLI at `/usr/local/bin/signal-cli`
+- Chrome Headless at `/usr/bin/google-chrome-stable`
 - **Git**: workspace at ~/.openclaw/workspace. Remote has PAT embedded in URL. `git push` works without credentials — never ask about this.
 - **Shell**: elevated access enabled. Run directly.
 - **Browser**: Chrome headless available.
