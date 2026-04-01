@@ -362,18 +362,22 @@ client_secret*.json
 # Check if installed
 bw --version
 
-# If not installed:
-curl -LO "https://vault.bitwarden.com/download/?app=cli&platform=linux"
-# Or via npm:
+# If not installed (Ubuntu 24.04 — npm is most reliable):
 npm install -g @bitwarden/cli
+bw --version  # Confirm install
 ```
 
+> **Note:** The direct Linux binary download from vault.bitwarden.com can be unreliable. npm install is the recommended path on Ubuntu.
+
 **Option A: API Key auth (recommended for servers)**
+
+Get your API key from Bitwarden Web Vault → Account Settings → Security → API Key.
 
 ```bash
 # Add to ~/.openclaw/.env (bare KEY=VALUE format, no export):
 echo 'BW_CLIENTID=your-client-id' >> ~/.openclaw/.env
 echo 'BW_CLIENTSECRET=your-client-secret' >> ~/.openclaw/.env
+echo 'BW_PASSWORD=your-master-password' >> ~/.openclaw/.env
 ```
 
 Then the agent can unlock with:
@@ -381,6 +385,8 @@ Then the agent can unlock with:
 bw login --apikey
 export BW_SESSION=$(bw unlock --passwordenv BW_PASSWORD --raw)
 ```
+
+> **Important:** `BW_PASSWORD` must be set in `.env` for the unlock command to work non-interactively. It is your Bitwarden master password.
 
 **Option B: Bitwarden Secrets Manager (if using that instead)**
 
@@ -411,7 +417,22 @@ Same as Artie — agent-first approach:
 
 ### Google services (gog CLI)
 
-Same installation process as Artie, but with the NextMinute Google account:
+**Install gog CLI** (terminal — do this before asking the agent):
+
+```bash
+# Check if installed
+gog --version
+
+# If not installed — use Linuxbrew (most reliable on Ubuntu):
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew install gogcli
+gog --version  # Confirm install
+```
+
+> **Note:** Direct GitHub release binaries for Linux can be unreliable. Linuxbrew → `brew install gogcli` is the recommended path.
+
+Then set up OAuth for the NextMinute Google account:
 
 1. **New Google Cloud project** for this instance (or reuse one — but separate OAuth credentials)
 2. Enable APIs: Gmail, Calendar, Drive, People/Contacts
@@ -438,6 +459,12 @@ Then copy these files from Artie's workspace:
 > **Note:** The render script requires `python3` on the server. The agent can install it if needed.
 
 Update the SKILL.md paths if the workspace path differs (it shouldn't if using defaults).
+
+**After copying, tell the agent how to discover its skills:**
+
+> "Read `~/.openclaw/workspace/skills/pdf-creator/SKILL.md` and follow it exactly when asked to create PDFs."
+
+The agent does not auto-discover skill files — it needs to be pointed at the SKILL.md explicitly, either via a direct instruction or by adding the skill path to `AGENTS.md` session startup.
 
 ---
 
@@ -505,7 +532,31 @@ The `BW_SESSION` token expires. The agent will need to re-unlock periodically. C
 Check that Event Subscriptions are enabled with the correct Request URL pointing to your gateway. The gateway must be externally accessible for Slack events (unlike Telegram which uses polling).
 
 ### Slack vs Telegram: gateway accessibility
-Telegram uses polling (bot pulls messages) — works behind firewalls. Slack uses webhooks (Slack pushes events) — gateway needs a public URL or tunnel. Options: Cloudflare Tunnel, ngrok, or open the gateway port with appropriate auth.
+Telegram uses polling (bot pulls messages) — works behind firewalls. Slack uses webhooks (Slack pushes events) — gateway needs a public URL or tunnel.
+
+**Recommended: Cloudflare Tunnel (free, no open ports)**
+
+```bash
+# Install cloudflared
+curl -L --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+dpkg -i cloudflared.deb
+
+# Authenticate (follow browser prompt)
+cloudflared tunnel login
+
+# Create a tunnel
+cloudflared tunnel create nm-openclaw
+
+# Route to your gateway port (default 18789)
+cloudflared tunnel route dns nm-openclaw your-subdomain.yourdomain.com
+
+# Run the tunnel (point to gateway)
+cloudflared tunnel run --url http://localhost:18789 nm-openclaw
+```
+
+Then set the Slack Request URL to: `https://your-subdomain.yourdomain.com/slack/events`
+
+> **Alternative:** Use ngrok for quick testing (`ngrok http 18789`) — but the URL changes on restart unless you have a paid ngrok plan.
 
 ### Agent confuses NextMinute context with personal context
 IDENTITY.md and USER.md must have zero personal/family content. If the agent starts referencing Marc's personal life, check these files — something leaked from the template.
@@ -572,3 +623,49 @@ git -C ~/.openclaw/workspace remote -v  # Check git remote URL
 - `skills/gog/SKILL.md` (copy as-is)
 - `.gitignore` patterns
 - Model strategy and config commands
+
+---
+
+## AGENTS.md Starter Template
+
+This file controls session startup order and memory behaviour. It must exist at the workspace root. Use this as a starting point:
+
+```markdown
+# AGENTS.md - Your Workspace
+
+## Session Startup
+
+Before doing anything else, read these files in order:
+
+1. `IDENTITY.md` — who you are
+2. `SOUL.md` — how you behave
+3. `USER.md` — NextMinute context (staff, systems, projects)
+4. `MEMORY.md` — what you've learned over time
+5. `TOOLS.md` — what you have access to and how to use it
+6. `memory/YYYY-MM-DD.md` (today) — recent events
+
+## Workspace Layout
+
+- `IDENTITY.md`, `SOUL.md`, `USER.md`, `MEMORY.md`, `TOOLS.md`
+- `projects/` — active work areas
+- `scripts/` — production/reusable tools
+- `memory/` — daily logs
+- `skills/` — agent skill files
+- `tmp/` — working files only (not committed)
+
+## Rules
+
+- No loose files in workspace root. Project files go in subfolders.
+- Permanent facts about the NextMinute context → `USER.md`
+- Insights and patterns → `MEMORY.md`
+- Today's session notes → `memory/YYYY-MM-DD.md` only
+- Never ask where to save. Just save it correctly.
+- `trash` > `rm`
+- Ask before: sending emails, public Slack posts, anything externally irreversible
+- Everything else: just do it
+
+## Skills
+
+- PDF reports: `skills/pdf-creator/SKILL.md`
+- Google services: `skills/gog/SKILL.md`
+```
