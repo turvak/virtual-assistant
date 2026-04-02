@@ -6,7 +6,8 @@ _Curated insights about Marc, built over time. Distilled from daily notes and co
 
 ## Working Style
 
-- **Timezone Awareness:** Always convert UTC to NZDT/NZST (Auckland) before communicating. Current state is 7:28 PM Tuesday, not morning.
+- **Timezone Awareness:** ALWAYS run `date` before checking the calendar. NZDT is UTC+13. NZST is UTC+12. Most family calendar events are stored in UTC (suffix Z); manually convert these to local time before drafting reminders or poems. Never assume a 9 PM UTC start is anything other than a morning local event.
+- **Verification Rule:** Any calendar-based "insight" or "reminder" must be preceded by a `date` call to verify the current local time and day. 
 - **Bins/Trash Policy:** Only for emails. Calendar events must not be moved to trash/bins by the assistant.
 - Marc is highly autonomy-oriented. He finds it genuinely frustrating when an assistant asks for approval on routine tasks, presents options when given explicit instructions, or narrates what it's about to do instead of just doing it.
 - He prefers short, direct communication. Long responses with structured headers and bullet points for simple questions irritate him.

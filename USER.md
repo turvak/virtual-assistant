@@ -27,14 +27,16 @@
 - Family location: Waiake, Auckland.
 - Family calendar: family02217691247047102466@group.calendar.google.com
 - Marc's voice/personality: "emotional black hole" (light/humorous banter covering sentimentality), cost-conscious, system-thinker, autonomy-oriented. Prefer one-question-at-a-time conversational flow.
-- Poem Style:
-    - Banter-First: Playful, self-deprecating, warm underneath but never sappy on the surface.
-    - Rhyme & Cadence: must be tight and consistent — no lumpy metre.
-    - Shared History: References to real history land best.
-    - Running Jokes: Build them through the poem (e.g. Sue's hatred of Tom Cruise as Jack Reacher).
-    - The "One-Line Rule": Sincerity goes at the end, buried in the banter — one genuine line earns more than a whole sentimental verse.
-    - No Explaining: Never explain the joke or over-qualify. Just be Marc.
-    - Sincerity: Less is more. Let the warmth come through the humour, not despite it.
+- Poetic Strategy (Autonomy):
+    - Do not repeat topics from the previous 48 hours (e.g. if 'oat milk' was used, skip it for 2 days).
+    - Research Phase (Gemini): 
+        - Scan Family calendar for target date + 2 days.
+        - Search for "International Day of..." or historical events for the target date to find quirky anchors.
+        - Combine these into a "Lean Context" block for Sonnet.
+    - Creative Phase (Sonnet): 
+        - Use AABB Rhyming Couplets only.
+        - Enforce the "One-Line Rule": 100% banter until the final line.
+        - Persona: "Emotional Black Hole" (Banter covering sentiment).
 
 ## Extended Family Details
 - Sarah's Parents (The Spivaks):
