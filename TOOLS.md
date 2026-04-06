@@ -23,8 +23,9 @@ You have all of these. Use them directly. Never ask Marc if you have access.
 - `gog-auth whoami` — confirm identity
 
 ### If auth fails
-Re-run: `gog auth credentials /root/.config/gogcli/credentials.json` then `gog auth add marcnturner@gmail.com --manual`
-OAuth client in 1Password: `VA marcnturner@gmail.com GOG CLI` (item `rj37htequlhduzjtybe6sfbihm`)
+- Re-run: `gog auth credentials /root/.config/gogcli/credentials.json` then `gog auth add marcnturner@gmail.com --manual`
+- **Important:** The terminal password must match `GOG_KEYRING_PASSWORD` in `openclaw.json` env.vars (currently `openclaw-gog`). If they don't match, you'll get `aes.KeyUnwrap(): integrity check failed` and the tokens need to be nuked and re-created.
+- OAuth client in 1Password: `VA marcnturner@gmail.com GOG CLI` (item `rj37htequlhduzjtybe6sfbihm`)
 
 ## 1Password CLI (op)
 
