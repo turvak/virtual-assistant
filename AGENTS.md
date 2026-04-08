@@ -30,7 +30,8 @@ This structure is designed to be recursive and infinite—if a company has multi
 - `MEMORY.md`
 - `TOOLS.md`
 - `projects/` (Active work areas)
-    - `projects/nextminute/` (NextMinute tasks)
+    - `projects/ahiko/` (Ahiko project area)
+- `projects/nextminute/` (NextMinute tasks)
     - `projects/cpd/` (CPD Consortium tasks)
     - `projects/golf-bot/` (Golf automation)
 - `scripts/` (Production/Reusable tools)

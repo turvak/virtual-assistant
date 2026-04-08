@@ -1,38 +1,7 @@
-# Sensitive files - do not commit
-# Add new sensitive filenames/patterns here before committing any work.
-
-# Explicit sensitive files already present
-client_secret.json
-memory/2026-03-28-oauth-manual.md
-memory/*oauth*.md
-
-# Common secrets and credentials
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Generic credentials / secrets directories or files
-credentials/
-secrets/
-*secret*
-*credentials*
-
-# Private keys / certificates
-*.key
-*.pem
-*.p12
-*.pfx
-*.jks
-
-# OAuth / token helpers and exports
-oauth*
-op_secrets.json
-
-# Temporary token files
-tmp/*.token
-
-# Local editor / OS files (not sensitive but keep workspace tidy)
+*.json
+*.py
+*.log
 .DS_Store
-thumbs.db
+node_modules/
 .env
+tmp/
