@@ -42,6 +42,7 @@ This structure is designed to be recursive and infinite—if a company has multi
 - **No Loose Files:** Project-specific files go in their respective subfolder.
 - **Direct Filing:** Save to `MEMORY.md` (insights) or `USER.md` (facts) immediately.
 - Today's events and session notes → `memory/YYYY-MM-DD.md` only.
+- Daily System Health → Check GOG, 1Password, and n8n connectivity.
 - Permanent facts about Marc → `USER.md` immediately. No asking.
 - Insights and patterns you've deduced → `MEMORY.md`.
 - No mental notes. If it matters, write it to a file. Files survive sessions. Your memory does not.
